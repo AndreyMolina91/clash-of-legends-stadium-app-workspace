@@ -1,0 +1,55 @@
+{
+	"extends": "../../.eslintrc.json",
+	"ignorePatterns": ["!**/*"],
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"parserOptions": {
+				"project": ["tsconfig.json", "e2e/tsconfig.json"],
+				"createDefaultProgram": true
+			},
+			"extends": [
+				"plugin:@angular-eslint/recommended",
+				"plugin:@angular-eslint/template/process-inline-templates",
+				"airbnb-typescript/base",
+				"plugin:prettier/recommended"
+			],
+			"rules": {
+				"no-restricted-syntax": "off",
+				"import/prefer-default-export": "off",
+				"member-ordering": "off",
+				"no-param-reassign": "off",
+				"no-underscore-dangle": "off",
+				"max-classes-per-file": ["error", 2],
+				"class-methods-use-this": "off",
+				"@typescript-eslint/lines-between-class-members": "off",
+				"@typescript-eslint/member-ordering": "off",
+				"@typescript-eslint/no-empty-function": "off",
+				"@typescript-eslint/no-useless-constructor": "off",
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"type": "element",
+						"prefix": "app",
+						"style": "kebab-case"
+					}
+				],
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"type": "attribute",
+						"prefix": "app"
+					}
+				],
+				"@typescript-eslint/explicit-member-accessibility": "off",
+				"arrow-parens": ["off", "always"],
+				"import/order": "off"
+			}
+		},
+		{
+			"files": ["*.html"],
+			"extends": ["plugin:@angular-eslint/template/recommended"],
+			"rules": {}
+		}
+	]
+}

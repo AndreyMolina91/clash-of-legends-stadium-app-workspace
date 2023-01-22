@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo -e "\n.................." &&
+
+echo -e ".....PRE-COMMIT......." &&
+
+echo -e ".................... \n" &&
+
+echo -e "#### Format files ##### "
+
+git add . &&
+npm run format-precommit-hook &&
+npm run ng-lint-fix && 
+npm run format-pretty-quick
+
+echo -e "\n#### Hook Finished ##### "
+echo -e "\n"

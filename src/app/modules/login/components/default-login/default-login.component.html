@@ -1,0 +1,55 @@
+<div id="login">
+	<div class="p-3 mb-4">
+		<img class="company-brand" src="../../../../../assets/clashoflegends-imgs/colapp-logo.png" />
+	</div>
+	<div class="justify-content-center align-items-center d-flex">
+		<div class="card text-start">
+			<div class="card-header text-end">
+				<img class="card-img-logo" src="../../../../../assets/clashoflegends-imgs/caustic-minimal.png" />
+				<img class="card-img-logo" src="../../../../../assets/clashoflegends-imgs/mini-logo.png" />
+			</div>
+			<div class="card-body">
+				<form [formGroup]="login">
+					<div class="my-2">
+						<label class="mb-2">{{ 'Participante del torneo' }}</label>
+						<input
+							class="form-control w-100"
+							maxlength="50"
+							type="text"
+							placeholder="{{ 'Nombre de usuario o correo' | lowercase }}"
+							formControlName="username"
+							data-cy="input-username"
+							autofocus
+						/>
+					</div>
+					<div class="mt-3">
+						<label class="mb-2">{{ 'Contraseña' }}</label>
+						<div>
+							<input
+								class="form-control"
+								appCapsLock
+								#password
+								maxlength="20"
+								type="password"
+								placeholder="{{ 'contraseña' | lowercase }}"
+								formControlName="password"
+								data-cy="input-password"
+							/>
+
+							<label *ngIf="true" tooltip="Bloq mayús activado" tooltip-position="left"></label>
+						</div>
+					</div>
+
+					<div *ngIf="true">
+						<span *ngFor="let message of errorMessage">{{ message }} <br /></span>
+					</div>
+
+					<div>
+						<button data-cy="button-submit" class="btn btn-primary w-100" (clickHandler)="submit()">ENTRAR</button>
+					</div>
+				</form>
+			</div>
+			<div class="card-footer text-muted">2023 software en propiedad de Colspa</div>
+		</div>
+	</div>
+</div>

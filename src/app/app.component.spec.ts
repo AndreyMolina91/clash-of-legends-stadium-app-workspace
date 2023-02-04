@@ -15,19 +15,4 @@ describe('AppComponent', () => {
 		const app = fixture.componentInstance;
 		expect(app).toBeTruthy();
 	});
-
-	it(`should have as title 'clash-of-legends-stadium-app-workspace'`, () => {
-		const fixture = TestBed.createComponent(AppComponent);
-		const app = fixture.componentInstance;
-		expect(app.title).toEqual('clash-of-legends-stadium-app-workspace');
-	});
-
-	it('should render title', () => {
-		const fixture = TestBed.createComponent(AppComponent);
-		fixture.detectChanges();
-		const compiled = fixture.nativeElement as HTMLElement;
-		expect(compiled.querySelector('.content span')?.textContent).toContain(
-			'clash-of-legends-stadium-app-workspace app is running!'
-		);
-	});
 });

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DefaultLoginComponent } from './default-login.component';
 
@@ -8,7 +9,8 @@ describe('DefaultLoginComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [DefaultLoginComponent]
+			declarations: [DefaultLoginComponent],
+			imports: [FormsModule, ReactiveFormsModule]
 		}).compileComponents();
 
 		fixture = TestBed.createComponent(DefaultLoginComponent);

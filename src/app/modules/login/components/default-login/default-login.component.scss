@@ -1,0 +1,43 @@
+@import '../../../../../styles.scss';
+
+#login {
+	background-image: url('../../../../../assets/clashoflegends-imgs/login-wallpaper.png');
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100vw;
+
+	.company-brand {
+		width: 300px;
+		padding: 40px;
+	}
+	.card {
+		width: 380px;
+		height: 350px;
+		background-color: $gray3 !important;
+		opacity: 0.7;
+		color: $white !important;
+		margin-block: 150px;
+		.card-header {
+			.card-img-logo {
+				height: 40px;
+			}
+		}
+		.card-body {
+			.form-control {
+				padding-right: 4.75rem;
+				opacity: 1;
+				height: 30px;
+				font-size: 12px;
+				font-weight: bolder;
+			}
+			.btn-primary {
+				background-color: #bf9000;
+				border-color: #bf9000;
+				font-weight: 700;
+			}
+		}
+		.card-footer {
+			font-size: 12px;
+		}
+	}
+}

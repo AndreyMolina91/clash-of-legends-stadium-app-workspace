@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.css';
+@import 'variables.scss';
+
+body {
+	font-family: 'Open Sans', sans-serif !important;
+	overflow-y: hidden;
+}

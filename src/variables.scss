@@ -1,0 +1,54 @@
+@import 'colors.scss';
+
+// HCM
+$demora-operativa: $orange;
+$no-operativo: $cyan;
+$mantenimiento: $gray2;
+$form-group-label-color: $gray3;
+$form-group-input-background-color: $white2;
+$form-group-input-disabled-background-color: $gray9;
+$form-group-input-text-color: $black2;
+$form-group-input-caret-color: $gray7;
+$form-group-input-counter-color: $gray2;
+
+$form-group-label-color: $gray3;
+$form-group-input-background-color: $white2;
+$form-group-input-disabled-background-color: $gray9;
+$form-group-input-text-color: $black2;
+$form-group-input-caret-color: $gray7;
+$form-group-input-counter-color: $gray2;
+
+$action-color: $orange;
+
+/* NAVBAR */
+// Alto de barra superior
+$navbar-height: 70px;
+$navbar-bgcolor: $gray3;
+
+/* SIDEBAR */
+// Ancho de barra lateral
+$sidebar-width: 230px;
+// Ancho mínimo de barra lateral
+$sidebar-min-width: 65px;
+
+$sidebar-without-toggle: 185px;
+
+/* FOOTER */
+// Ancho de footer
+$footer-height: 15px;
+// Visibilidad de footer
+$footer-display: none;
+
+/* WIDGET */
+$widget-header-height: 40px;
+$widget-max-height: 300px;
+
+/* COLORS */
+$default-component-bgcolor: $gray3;
+
+/* COMMON */
+$content-view-header-height: 40px;
+$default-padding: 15px;
+
+/* BUTTON */
+$max-width-button: 120px;
